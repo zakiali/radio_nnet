@@ -1,0 +1,6 @@
+CORR-DACQ: created file.
+/data2/home/jonri/apps/bin/correct_psa128.py zen.2456679.43314.xx.uv
+/data2/home/jonri/apps/python2.7.10/bin/xrfi_simple.py -a 1 --df=6 -c 0_65,377_388,510,770,840,852,913,921_922,932_934,942_1023 --combine -t 80 zen.2456679.43314.xx.uvc
+/data2/home/jonri/apps/python2.7.10/bin/xrfi_simple.py -a all --combine -t 80 --from_npz=zen.2456679.43314.xx.uvcRE.npz zen.2456679.43314.xx.uvcR
+DDR FILTER, DDR:/data2/home/jonri/apps/bin/ddr_filter_coarse.py -a all -p xx,xy,yx,yy --maxbl=301 --clean=1e-3 --output=ddr --nsections=20 zen.2456679.42618.xx.uvcR zen.2456679.43314.xx.uvcRR zen.2456679.44010.xx.uvcR
+PULL ANTPOLS:/Users/sherlock/src/capo/zsa/scripts/pull_antpols.py -a auto -p xx zen.2456679.43314.xx.uvcRRE
